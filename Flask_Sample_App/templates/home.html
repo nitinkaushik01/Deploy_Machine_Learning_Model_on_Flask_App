@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Profit Prediction</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue">Profit prediction from Startup spendings</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter the values for State, R&D Spend, Administration Spend and Marketing Spend</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="NewYork"><p class="font-weight-bold">NewYork</p></label>
+              <input type="text" name="NewYork">
+              <small id="NYHelp" class="form-text text-muted">Enter 1 if the state selected is New York else enter 0</small>
+              </div>
+
+              <div class="form-group">
+                <label for="California"><p class="font-weight-bold">California</p></label>
+                <input type="text" name="California">
+                <small id="CaliforniaHelp" class="form-text text-muted">Enter 1 if the state selected is New York else enter 0</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="Florida"><p class="font-weight-bold">Florida</p></label>
+                  <input type="text" name="Florida">
+                  <small id="FloridaHelp" class="form-text text-muted">Enter 1 if the state selected is New York else enter 0</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="RnD_Spend"><p class="font-weight-bold">RnD_Spend</p></label>
+                    <input type="text" name="RnD_Spend">
+                    <small id="RnDSpendHelp" class="form-text text-muted">Enter the value for RnD Spend</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Admin_Spend"><p class="font-weight-bold">Admin_Spend</p></label>
+                      <input type="text" name="Admin_Spend">
+                      <small id="AdminSpendHelp" class="form-text text-muted">Enter the value for Admin Spend</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Market_Spend"><p class="font-weight-bold">Market_Spend</p></label>
+                        <input type="text" name="Market_Spend">
+                        <small id="MarketSpendHelp" class="form-text text-muted">Enter the dollar amount for Market Spend</small>
+                        </div>
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
